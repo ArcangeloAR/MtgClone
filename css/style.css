@@ -1,0 +1,869 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* para garantir que os elementos não vão vazar da caixa */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*elementos base*/
+
+body{
+    background-image: url(../media/img/background.jpg);
+    background-repeat: repeat;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: white solid 1px;
+    padding: 5px;
+    font-size: 12.5px;
+
+    z-index: 999;
+    margin-bottom: 0;
+}
+
+header .mtgLogoWhite{
+    height: 40px;
+    margin-right: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav a:hover{
+    color: rgb(234, 75, 18);
+}
+
+header .menu1{
+    background-color: black;
+    position: flex;
+    margin-left: 70px;
+
+}
+
+header .menu1 hr{
+    display: flex;
+    border-color: rgb(234, 75, 18);
+    border-width: 1px;
+    width: 30px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+header .destaqueKaldheim{
+    height: 250px;
+}
+
+header .menu1a{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+header .menu1 nav{
+    position: absolute;
+
+}
+
+header .menu1 li{
+    display: inline;
+
+}
+
+header .menu1a1{
+    padding-left: 25px;
+}
+
+header .menu1a2{
+    padding-left: 25px;
+}
+
+header .menu1a3{
+    padding-left: 25px;
+}
+
+header .menu1a4{
+    padding-left: 25px;
+}
+
+header .menu1 ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+header .menu1 ul li a:hover{
+    text-decoration: none;
+    color: rgb(234, 75, 18);
+
+}
+
+header .menu1 ul li ul li{
+    color: white;
+    font-size: 15px;
+}
+
+header .menu1 ul li ul li ul li{
+    padding-top: 10px;
+}
+
+header .menu1 ul li ul li ul li>a{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+header .menu2{
+    margin-top: 21px;
+    background-color: white;
+    visibility: hidden;
+    transition: visibility 5s;
+    width: 100%;
+    left: 0;
+    padding-left: 410px;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+header .menu2 ul{
+    display: flex;
+
+}
+
+header .menu2 li{
+    display: block;
+
+}
+
+header .menu2 ul li ul{
+    display: block;
+}
+
+header .menu2a1a{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+header .menu2a2{
+    padding-left: 35px; 
+}
+
+header .menu2a3{
+    padding-left: 35px; 
+}
+
+header .menu3{
+    margin-top: 21px;
+    background-color: white;
+    visibility: hidden;
+    transition: visibility 5s;
+    width: 100%;
+    left: 0;
+    padding-left: 410px;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header .menu3 ul{
+    display: flex;
+
+}
+
+header .menu3 li{
+    display: block;
+}
+
+
+header .menu3 ul li ul{
+    display: block;
+}
+
+header .menu3a2{
+    margin-left: 20px;
+}
+
+header .menu1a1:hover > a + .menu2 {
+    display: block;
+    background-color: black;
+    border-top: 2px solid rgb(218, 76, 19);
+    visibility: visible;
+    z-index: 999;
+}
+
+header .menu1a2:hover > a + .menu3 {
+    display: block;
+    background-color: black;
+    border-top: 2px solid rgb(218, 76, 19);
+    visibility: visible;
+    z-index: 999;
+}
+
+header .menuSecundario{
+    display: flex;
+    background-color: black;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 70px;
+
+}
+
+header .menuSecundario a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+main .boxPrincipal{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+ }
+
+section .jogueComoQuiser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0px;
+}
+
+
+section .container{
+    display: flex;
+    padding: 0 50%;
+    justify-content: space-evenly;
+}
+
+
+section .mtgArena{
+    padding: 12px;
+}
+
+section .mtgArenaH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+
+section .mtgArenaP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17,5px;
+    padding-top: 5px;
+    padding-bottom: 19px;
+}
+
+section .mtgArenaF{
+    font-weight: bold;
+    color: rgb(203, 74, 44);
+    padding-top: 18px;
+}
+
+section .mtgArenaF:hover{
+    font-weight: bold;
+    color: rgb(147, 43, 43);
+    padding-top: 18px;
+}
+
+section .mtgArena>a{
+    text-decoration: none;
+}
+
+section .mesaDeJogo{
+    padding: 12px;
+}
+
+section .mesaDeJogoH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+
+section .mesaDeJogoP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17,5px;
+    padding-top: 5px;
+    padding-bottom: 19px;
+}
+
+section .mesaDeJogoF{
+    font-weight: bold;
+    color: rgb(203, 74, 44);
+}
+
+section .mesaDeJogoF:hover{
+    font-weight: bold;
+    color: rgb(147, 43, 43);
+}
+
+section .mesaDeJogo>a{
+    text-decoration: none;
+}
+
+
+section .magicOnline{
+    padding: 12px;
+}
+
+section .magicOnlineH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+
+section .magicOnlineP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17,5px;
+    padding-top: 5px;
+    ;
+}
+
+section .magicOnlineF{
+    font-weight: bold;
+    color: rgb(203, 74, 44);
+    padding-top: 38px;
+}
+
+section .magicOnlineF:hover{
+    font-weight: bold;
+    color: rgb(147, 43, 43);
+    padding-top: 38px;
+}
+
+section .magicOnline>a{
+    text-decoration: none;
+}
+
+
+section .competitivo{
+    padding: 12px;
+}
+
+section .competitivoH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+
+section .competitivoP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17,5px;
+    padding-top: 5px;
+    padding-bottom: 19px;
+}
+
+section .competitivoF{
+    font-weight: bold;
+    color: rgb(203, 74, 44);
+    padding-top: 20px;
+}
+
+section .competitivoF:hover{
+    font-weight: bold;
+    color: rgb(147, 43, 43);
+    padding-top: 20px;
+}
+
+section .competitivo>a{
+    text-decoration: none;
+}
+
+
+
+section .descubraMais{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section .encontreUmEvento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+
+
+section .playKaldheim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+
+section .lembrete{
+    background-image: url(../media/img/lembrete.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    box-sizing: border-box;
+    padding-left: 130px;
+    padding-top: 20px;
+    margin-bottom: 90px;
+}
+
+section .lembreteH{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section .lembreteP{
+    font-size: 13px;
+    width: 800px;
+    padding: 10px 0;
+}
+
+section .lembreteEmail{
+    width: 410px;
+    height: 37px;
+}
+
+section .lembreteCheckbox{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+section .lembreteF{
+    font-size: 11px;
+    width: 840px;
+    padding: 10px 0;
+}
+
+section .lembreteF>a{
+    color: rgb(234, 75, 18);
+}
+
+section .lembreteButton{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    width: 215px;
+    height: 45px;
+    margin-bottom: 18px;
+}
+
+section .lembreteButton:hover{
+    background-color: black;
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+    border: 2px solid rgb(33, 33, 33);
+    width: 215px;
+    height: 45px;
+    margin-bottom: 18px;
+}
+
+
+section .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+
+
+
+
+footer{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+footer .footerMenu{
+    display: flex;
+    background-color: rgb(11, 11, 11);
+    padding-left: 19%;
+    height: 300.5px;
+    padding-top: 60px;
+}
+
+footer .footerMenu hr{
+    display: flex;
+    border-color: rgb(234, 75, 18);
+    border-width: 1px;
+    width: 30px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+footer .footerMenu div{
+    font-size: 14px;
+    font-size: bold;
+}
+
+footer .footerMenu1{
+    display: flex;
+    background-color: rgb(11, 11, 11);
+    width: 32%;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+footer .footerMenu1-1{
+    display: block;
+    background-color: rgb(11, 11, 11);
+    width: 100%;
+    justify-content: flex-end;
+    padding: 15px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+footer .footerMenu1-1-1{
+    display: block;
+    background-color: rgb(11, 11, 11);
+    width: 100%;
+    padding-bottom: 33px;
+    padding-top: 0px;
+}
+footer .footerMenu1-1-1-1{
+    display: block;
+    background-color: rgb(11, 11, 11);
+    width: 80%;
+
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+footer .p{
+    display: flex;
+}
+
+footer .footerMenu1-1-1-1InputText{
+    background-color: white;
+    color: rgba(103, 103, 103, 90%);    
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    border: black solid 1px;
+    border-right: white;
+}
+
+
+footer .footerMenu1-1-1-1InputSearch{
+    border: black solid 1px;
+    border-left: white;
+    width: 30px;
+    height: 45px;
+    background-image: url(../media/img/lupa.png);
+}
+
+footer .footerMenu1-1-2{
+    background-color: rgb(11, 11, 11);
+    width: 100%;
+
+}
+footer .footerMenu1-1-2-1{
+    display: block;
+    background-color: rgb(11, 11, 11);
+    width: 100%;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+footer .footerLogoSocial{
+    display:flex;
+    padding: 8px;
+}
+
+footer .footerLogoSocialParceiros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 100%;
+    margin: 5px;
+}
+
+footer .footerLogoSocialParceiros:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(234, 75, 18);
+    border-radius: 100%;
+    margin: 5px;
+}
+
+footer .footerLogoSocialImg{
+    width: 40%;
+    height: 40%;
+    filter: invert(100%)
+}
+
+
+footer .footerMenu2{
+    display: flex;
+    background-color: rgb(11, 11, 11);
+    width: 45%;
+
+
+}
+
+footer .footerMenu2-1{
+    background-color: rgb(11, 11, 11);
+    list-style: none;
+    padding-left: 50px;
+}
+
+footer .footerMenu2-1>a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    padding: 3px;
+    font-size: 14px;
+}
+
+footer .footerMenu2-1>a:hover{
+    text-decoration: none;
+    color: rgb(234, 75, 18);
+}
+
+
+footer .footerMenu2-2{
+    background-color: rgb(11, 11, 11);
+    list-style: none;
+    padding-left: 110px;
+}
+
+footer .footerMenu2-2>a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    padding: 3px;
+    font-size: 14px;
+}
+
+footer .footerMenu2-2>a:hover{
+    text-decoration: none;
+    color: rgb(234, 75, 18);
+}
+
+footer .footerMenu2-3{
+    background-color: rgb(11, 11, 11);
+    list-style: none;
+    padding-left: 120px;
+}
+
+footer .footerMenu2-3>a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    padding: 3px;
+    font-size: 14px;
+}
+
+footer .footerMenu2-3>a:hover{
+    text-decoration: none;
+    color: rgb(234, 75, 18);
+}
+
+
+footer .footerCompanies{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(11, 11, 11);
+    height: 90px;
+}
+
+footer .footerCompaniesLogos{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    margin-right: 212px;
+    padding-bottom: 50px;
+
+}
+
+
+footer .footerCompaniesWizards{
+    padding: 10px;
+
+}
+
+footer .footerCompaniesHasbro{
+    width: 100px;
+    padding: 10px;
+
+}
+
+footer .footerCompaniesPrivacy{
+    width: 90px;
+    padding: 10px;
+
+}
+
+
+footer .maisInformacoes{
+    display: flex;
+    justify-content: space-evenly;
+    height: 43px;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(36, 36, 36);
+    padding: 5px 317px;
+    padding-right: 350px;
+}
+
+footer .maisInformacoes a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .maisInformacoes a:hover{
+    text-decoration: none;
+    color: rgb(234, 75, 18);
+}
+
+footer .maisInformacoesTermos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 11.5px;
+    text-align: center;
+}
+
+footer .maisInformacoesCodigo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 11.5px;
+    text-align: center;
+}
+
+footer .maisInformacoesPolitica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 11.5px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+footer .maisInformacoesSuporte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 11.5px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+footer .maisInformacoesCoookies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 11.5px;
+    text-align: center;
+}
+
+footer .maisInformacoesPolitica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    font-size: 11.5px;
+    text-align: center;   
+}
+
+footer .maisInformacoesInfoPessoais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 11.5px;
+    text-align: center;   
+}
+
+footer .maisInformacoesLanguage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    font-size: 11.5px;
+    text-align: center;   
+}
+
+footer #language{
+    background-color: rgb(36, 36, 36);
+    color: white;    
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+}
+
+
+footer .final{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10.5px;
+    height: 45px;
+    color: rgb(128, 128, 128);
+    padding: 15px;
+    background-color: black;
+}
